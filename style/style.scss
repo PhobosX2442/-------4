@@ -65,9 +65,11 @@ header {
     }
 }
 
-header h5 {
-    padding: 10px;
-}
+header {
+    margin-bottom: 150px;
+    h5 {
+        padding: 10px;
+}}
 
 .triangle {
     width: 0;
@@ -121,19 +123,78 @@ header h5 {
 .list-group-item {
     border: none;
 }
+.nav-link {
+    color: white;
+}
 
+.rooms {
+padding: 0 0;
+position: relative;
+color: white;
+text-align: center;
+h3 {position: absolute;
+    bottom: 190px;
+    width: 100%;}
+}
 
+.orn {
+    padding-top: 150px;
+}
+.ornare {
+    position: relative;
+}
+.ornare_text {
+    background-color: var(--color2);
+    padding: 70px 60px 84px 146px;
+    position: absolute;
+    right: 10%;
+}
+.ornare_ul {
+    list-style-type: square;
+    color: var(--color1);
+    span {color: black;}
+}
+.ornare_photo {
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    z-index: 10;
+}
+@media (max-width: 1400px) {
+    .ornare_photo {
+        top: 110px;
+        left: 2.5%;
+    }
+    .ornare_text {
+        right: 5%;
+    }
+}
+@media (max-width: 1200px) {
+    .ornare_photo img{
+        display: none;
+    }
+    .ornare_text {
+        width: 80%;
+        padding-left: 100px;
+    }
+}
 
-
-
-
-
+.trener_block {
+    padding-top: 800px;
+    h2 {padding-bottom: 75px;}
+}
 .trener {
     color: black;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 200px;
+    text-align: center;
 
-    img {
-        max-width: 166px;
-    }
+    img {max-width: 166px;}
+    h4 {padding: 25px 0 0 15px;}
+}
+.carousel-indicators {
+    bottom: -80px;
+    background-color: pink;
+    li {background-color: black;}
 }
