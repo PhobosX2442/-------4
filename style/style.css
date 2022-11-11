@@ -1,0 +1,151 @@
+@charset "UTF-8";
+:root {
+  --color1: #8D86C9;
+  --color2: #F7ECE1;
+}
+
+@font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("gilroy"), url("/fonts/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("gilroy"), url("/fonts/Gilroy-Semibold.woff2") format("woff2"), url("/fonts/Gilroy-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("gilroy"), url("/fonts/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold.woff") format("woff");
+}
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+body {
+  font-family: Gilroy;
+}
+
+.header1 {
+  padding: 30px 0;
+  border-bottom: 1px solid white;
+}
+
+.header2 {
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
+
+.header__play {
+  padding-bottom: 200px;
+}
+
+header {
+  color: white;
+  border-bottom: none;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: round;
+}
+header h1, header h2, header h3, header h4, header h5 {
+  color: #FFFFFF;
+}
+
+header h5 {
+  padding: 10px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 8px 0 8px 13.9px;
+  border-color: transparent transparent transparent #FFFFFF;
+  border-style: solid;
+}
+
+.play_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color1);
+  border-radius: 50%;
+}
+
+.play_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: white solid 1px;
+  border-radius: 50%;
+}
+.play_outer:hover .triangle {
+  border-color: transparent transparent transparent black;
+}
+.play_outer:hover .play_inner {
+  background-color: var(--color2);
+}
+
+.card {
+  padding: 25px 10px;
+  border: none;
+  border-radius: 0;
+  background-color: var(--color1);
+}
+.card li {
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.trener {
+  color: black;
+  align-items: center;
+  width: 200px;
+}
+.trener img {
+  max-width: 166px;
+}/*# sourceMappingURL=style.css.map */
